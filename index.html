@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    #list {
+      width: 300px;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    .entry {
+      margin: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1>Michael's Watchlist</h1>
+    <h5>"Oh yeah, I'll definitely check that out"</h5>
+    <input id="input" placeholder="Movie or series">
+    <button id="submit">Submit</button>
+    <br>
+    <hr>
+    <div id="list">
+
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD5USOvbs3c6a3-U1fX5fk8d-_NVhePXT0",
+      authDomain: "michaels-watchlist.firebaseapp.com",
+      databaseURL: "https://michaels-watchlist.firebaseio.com",
+      projectId: "michaels-watchlist",
+      storageBucket: "",
+      messagingSenderId: "217087000128"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
